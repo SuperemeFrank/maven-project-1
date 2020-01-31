@@ -29,12 +29,12 @@ pipeline {
 			parallel{
 				stage ('Deploy to Staging'){
 					steps{
-						sh "scp -i /Users/haoyu/FrankWorkSpace/AWS/tomcat-demo.pem **/target/*.war ec2-user${tomcat_dev'}:/var/lib/tomcat8/webapps"
+						sh "scp -i /Users/haoyu/FrankWorkSpace/AWS/tomcat-demo.pem **/target/*.war ec2-user${tomcat_dev}:/var/lib/tomcat8/webapps"
 					}
 				}
 				stage ('Deploy to Production'){
 					steps{
-						sh "scp -i /Users/haoyu/FrankWorkSpace/AWS/tomcat-demo.pem **/target/*.war ec2-user${tomcat_prod'}:/var/lib/tomcat8/webapps"
+						sh "scp -i /Users/haoyu/FrankWorkSpace/AWS/tomcat-demo.pem **/target/*.war ec2-user${tomcat_prod}:/var/lib/tomcat8/webapps"
 					}
 				}
 			}
