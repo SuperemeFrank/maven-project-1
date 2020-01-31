@@ -1,2 +1,1 @@
-Hello, Welcome to this course! Pipeline as code section for AWS. updated
-Super Frankyyyyyyyyyyyyyy!
+Hello, this is the first project deployed by Jenkins on AWS!
