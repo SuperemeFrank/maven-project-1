@@ -1,8 +1,8 @@
 pipeline {
     agent any
 	parameters{
-		string(name: 'tomcat_dev', defaultValue: '3.12.104.197', descreption: 'Staging Server')
-		string(name: 'tomcat_prod', defaultValue: '18.222.60.250', descreption: 'Production Server')
+		string(name: 'tomcat_dev', defaultValue: '3.12.104.197', description: 'Staging Server')
+		string(name: 'tomcat_prod', defaultValue: '18.222.60.250', description: 'Production Server')
 	}
 
 	tools{
